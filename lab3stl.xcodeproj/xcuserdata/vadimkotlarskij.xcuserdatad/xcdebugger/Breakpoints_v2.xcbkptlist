@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C3367450-F5A4-4C28-AAC4-343D96A5029F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "79E305B0-5ACB-438A-9E76-52B4A869ECA4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lab3stl/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
+            landmarkName = "MenuWorkingWithVector(vector)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "79E305B0-5ACB-438A-9E76-52B4A869ECA4 - bd71475b0ae1922b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "void MenuWorkingWithVector&lt;int&gt;(Vector&lt;int&gt;&amp;)"
+                  moduleName = "lab3stl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vadimkotlarskij/Desktop/c++/sem3/lab3stl/lab3stl/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "204"
+                  endingLineNumber = "204"
+                  offsetFromSymbolStart = "2300">
+               </Location>
+               <Location
+                  uuid = "79E305B0-5ACB-438A-9E76-52B4A869ECA4 - 9f8d4fa317b1ba41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "void MenuWorkingWithVector&lt;float&gt;(Vector&lt;float&gt;&amp;)"
+                  moduleName = "lab3stl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vadimkotlarskij/Desktop/c++/sem3/lab3stl/lab3stl/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "204"
+                  endingLineNumber = "204"
+                  offsetFromSymbolStart = "2316">
+               </Location>
+               <Location
+                  uuid = "79E305B0-5ACB-438A-9E76-52B4A869ECA4 - ddd5acd63b55ef8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "void MenuWorkingWithVector&lt;double&gt;(Vector&lt;double&gt;&amp;)"
+                  moduleName = "lab3stl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vadimkotlarskij/Desktop/c++/sem3/lab3stl/lab3stl/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "204"
+                  endingLineNumber = "204"
+                  offsetFromSymbolStart = "2344">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

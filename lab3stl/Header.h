@@ -193,6 +193,17 @@ bool Vector<T>::operator==(const Vector<T>& rhs) const
     if (v.size() != rhs.GetSize()) return false;
     for (size_t i = 0; i < v.size(); i++)
     {
+        if (abs(v[i] - rhs[i]) > 0) return false;
+    }
+    return true;
+}
+template<>
+bool Vector<double>::operator==(const Vector<double>& rhs) const
+{
+    double epsilon = 0.01;
+    if (v.size() != rhs.GetSize()) return false;
+    for (size_t i = 0; i < v.size(); i++)
+    {
         if (abs(v[i] - rhs[i]) > epsilon) return false;
     }
     return true;

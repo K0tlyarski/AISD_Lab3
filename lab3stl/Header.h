@@ -24,7 +24,6 @@ public:
     };
     void PushBack(const T& value);
     void Insert(const T& value, const size_t index);
-//    Vector<T>& operator=(const Vector<T>& rhs);
     T& operator[] (const size_t index){
         if (index >= v.size()) throw std::out_of_range("Index is out of range");
         return v[index];
@@ -97,12 +96,7 @@ public:
     
 
 };
-//template<class T>
-//Vector<T> & operator*=(const T& value, Vector<T>& rhs);
-//template<class T>
-//Vector<T> operator*(const T& value, const Vector<T>& rhs);
-//template<class T>
-//std::ostream& operator<< (std::ostream& out, const Vector<T>& vector);
+
 
 
 template<class T>
@@ -195,10 +189,11 @@ Vector<T> Vector<T>::operator/(const T& value) const
 template<class T>
 bool Vector<T>::operator==(const Vector<T>& rhs) const
 {
+    double epsilon = 0.01;
     if (v.size() != rhs.GetSize()) return false;
     for (size_t i = 0; i < v.size(); i++)
     {
-        if (abs(v[i] - rhs[i]) > 0) return false;
+        if (abs(v[i] - rhs[i]) > epsilon) return false;
     }
     return true;
 }

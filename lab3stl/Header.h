@@ -75,7 +75,8 @@ public:
         {
             if (rhs.GetSize() != v.size()) throw "Bad dimensions";
             std::complex<float> scalar_product = 0;
-            for (size_t i = 0; i < v.size(); i++)
+            //for (size_t i = 0; i < v.size(); i++)
+            for (auto i : v)
             {
                 scalar_product += std::complex<float>(v[i].real() * rhs[i].real() - v[i].imag() * rhs[i].imag(), v[i].real() * rhs[i].imag() + v[i].imag() * rhs[i].real());
             }
@@ -85,7 +86,8 @@ public:
         {
             if (rhs.GetSize() != v.size()) throw "Bad dimensions";
             std::complex<double> scalar_product = 0;
-            for (size_t i = 0; i < v.size(); i++)
+            //for (size_t i = 0; i < v.size(); i++)
+            for (auto i : v)
             {
                 scalar_product += std::complex<double>(v[i].real() * rhs[i].real() - v[i].imag() * rhs[i].imag(), v[i].real() * rhs[i].imag() + v[i].imag() * rhs[i].real());
             }

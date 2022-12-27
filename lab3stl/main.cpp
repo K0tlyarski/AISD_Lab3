@@ -300,7 +300,7 @@ void MenuWorkingWithVector(Vector<std::complex<Type_Vectors>>& vector)
                 std::cout<<"Enter the vector length"<<std::endl;
                 std::cin>>count;
                 for (int i = 0; i<count; i++) {
-                    std::cin>>n;
+                    GetValueFromUser(n);
                     vector.PushBack(n);
                 }
                 /*bool flag = true;

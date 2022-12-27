@@ -33,10 +33,8 @@ public:
         return v[index];
     };
     void Clear(){
-        for(int i=0;i<v.size();i++)
-        {
-            v.clear();
-        }
+        v.clear();
+        
     };
     Vector<T>& operator+= (const Vector<T>& rhs);
     Vector operator+(const Vector<T>& rhs) const;
@@ -46,7 +44,8 @@ public:
         {
             if (v.size() != rhs.GetSize()) throw("Different sizes");
             T result = 0;
-            for (size_t i = 0; i < v.size(); i++) {
+            for (size_t i = 0; i < v.size(); i++)
+            {
                 result += rhs.v[i] * v[i];
             }
             return result;
@@ -120,7 +119,7 @@ Vector<T>& Vector<T>::operator+= (const Vector<T>& rhs)
     if (v.size() != rhs.GetSize()) throw "Bad dimensions";
     for (size_t i = 0; i < v.size(); i++)
     {
-        v[i] += rhs[i]; //??
+        v[i] += rhs.v[i]; //??
     }
     return *this;
 }
@@ -138,7 +137,7 @@ Vector<T>& Vector<T>::operator-= (const Vector<T>& rhs)
     if (v.size() != rhs.GetSize()) throw "Bad dimensions";
     for (size_t i = 0; i < v.size(); i++)
     {
-        v[i] -= rhs[i]; //??
+        v[i] -= rhs.v[i]; //??
     }
     return *this;
 }
@@ -189,7 +188,6 @@ Vector<T> Vector<T>::operator/(const T& value) const
 template<class T>
 bool Vector<T>::operator==(const Vector<T>& rhs) const
 {
-    double epsilon = 0.01;
     if (v.size() != rhs.GetSize()) return false;
     for (size_t i = 0; i < v.size(); i++)
     {

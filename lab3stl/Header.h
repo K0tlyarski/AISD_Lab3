@@ -56,11 +56,20 @@ public:
     Vector operator/(const T& value) const;
     bool operator==(const Vector<T>& rhs) const;
     bool operator!=(const Vector<T>& rhs) const;
-    auto Begin() const
+//    auto Begin() const
+//    {
+//        return v.begin();
+//    }
+//    auto End() const
+//    {
+//        return v.end();
+//    }
+    auto begin() const
     {
         return v.begin();
     }
-    auto End() const
+
+    auto end() const
     {
         return v.end();
     }
@@ -231,6 +240,7 @@ Vector<T> operator*(const T& value, const Vector<T>& rhs)
 template<class T>
  std::ostream& operator<< (std::ostream& out, const Vector<T>& vector)
 {
+    
     size_t size = vector.GetSize();
     if (!size)
     {
@@ -238,7 +248,7 @@ template<class T>
         return out;
     }
     out << "[";
-    for (size_t i = 0; i < size - 1; i++)
+    for (auto i : vector)
     {
         out << vector[i] << " , ";
     }

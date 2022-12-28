@@ -143,7 +143,7 @@ void MenuWorkingWithVector(Vector<Type_Vectors>& vector)
                     std::cin>>index;
                     try
                     {
-                        vector.Erase(vector.Begin()+index);
+                        vector.Erase(vector.begin()+index);
                     }
                     catch (std::out_of_range& ex)
                     {
@@ -177,7 +177,7 @@ void MenuWorkingWithVector(Vector<Type_Vectors>& vector)
                     }
                     
                     vector2.Insert(result_1, 0);
-                    vector2.Erase(vector2.End()-1);
+                    vector2.Erase(vector2.end()-1);
                     
                     Type_Vectors sqr;
                     for (int i = 0; i<vector2.GetSize(); i++) {
@@ -351,7 +351,7 @@ void MenuWorkingWithVector(Vector<std::complex<Type_Vectors>>& vector)
                     std::cin>>index;
                     try
                     {
-                        vector.Erase(vector.Begin()+index);
+                        vector.Erase(vector.begin()+index);
                     }
                     catch (std::out_of_range& ex)
                     {
@@ -385,7 +385,7 @@ void MenuWorkingWithVector(Vector<std::complex<Type_Vectors>>& vector)
                 }
                 
                 vector2.Insert(result_1, 0);
-                vector2.Erase(vector2.Begin()+vector2.GetSize()-1);
+                vector2.Erase(vector2.begin()+vector2.GetSize()-1);
                 std::complex<Type_Vectors> sqr((Type_Vectors)0, (Type_Vectors)0);
                 
                 for (int i = 0; i<vector2.GetSize(); i++) {
